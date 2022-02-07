@@ -13,9 +13,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return view('contact', [
-            'title' => 'Contact',
-            'content' => 'This is the contact page'
+        return view('contact',[
+            "title" => "Contact"
         ]);
     }
 

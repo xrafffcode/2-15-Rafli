@@ -1,19 +1,19 @@
 @extends('master')
 
 @section('main')
-    <div class="container">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nama</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nama">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <input class="btn btn-danger" type="submit" value="Submit">
+    <h1 class="mb-3">Contact Us</h1>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Nama">
+        <label for="floatingInput">Nama</label>
     </div>
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+        <label for="floatingInput">Email</label>
+    </div>
+    <div class="form-floating mb-3">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+            style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Pesan</label>
+    </div>
+    <button type="button" class="btn btn-primary">Primary</button>
 @endsection
