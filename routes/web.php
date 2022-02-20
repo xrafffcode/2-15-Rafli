@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,4 +37,9 @@ Route::get('/gallery', function () {
 });
 
 
+
+
 Route::resource('/contact', ContactController::class);
+
+Auth::routes();
+

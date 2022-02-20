@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('main')
     <h1 class="mb-3">Contact Us</h1>
