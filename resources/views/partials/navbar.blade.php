@@ -12,7 +12,7 @@
             <!-- Left Side Of Navbar -->
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link {{ Request::url() == url('/') ? 'active' : ' ' }}" href="/">Home</a>
+                    <a class="nav-link {{ Request::url() == url('/home') ? 'active' : ' ' }}" href="/">Home</a>
                     <a class="nav-link {{ Request::url() == url('/about') ? 'active' : ' ' }}" href="/about">About</a>
                     <a class="nav-link {{ Request::url() == url('/gallery') ? 'active' : ' ' }}"
                         href="/gallery">Gallery</a>
@@ -48,7 +48,7 @@
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
-                                                                                                                                                                                                         document.getElementById('logout-form').submit();">
+                                                                                                                                                                                                             document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
 
