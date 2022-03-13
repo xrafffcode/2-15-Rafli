@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Models\Contact;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -43,6 +44,8 @@ Route::get('/home', function(){
         "title" => "Home"
     ]);
 });
+
+Route::get('/delete_contact/{id}', ContactController::class . '@destroy');
 
 
 Route::resource('/contact', ContactController::class);
