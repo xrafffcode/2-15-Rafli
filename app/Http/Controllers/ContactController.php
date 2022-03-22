@@ -85,7 +85,7 @@ class ContactController extends Controller
      */
     public function destroy($id)
     {
-        $pesan = Contact::where('id',$id)->first();
+    
         Contact::where('id',$id)->delete();
 
         return redirect()->back();
