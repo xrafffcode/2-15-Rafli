@@ -22,9 +22,12 @@
                                 <td>{{ $p->email }}</td>
                                 <td>{{ $p->pesan }}</td>
                                 <td>
-                                    <button class="item" data-placement="top" title="" data-original-title="Edit">
-                                        <i class="zmdi zmdi-edit"></i>
-                                    </button>
+                                    <a href="/edit_contact/{{ $p->id }}">
+                                        <button class="item" data-placement="top" title=""
+                                            data-original-title="Edit">
+                                            <i class="zmdi zmdi-edit"></i>
+                                        </button>
+                                    </a>
                                     <a href="/delete_contact/{{ $p->id }}">
                                         <button class="item ml-3" data-placement="top" title=""
                                             data-original-title="Delete">
